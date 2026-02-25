@@ -504,7 +504,7 @@ def main():
     if sys.platform == 'win32':
         try:
             sys.stdout.reconfigure(encoding='utf-8')
-        except:
+        except Exception:
             pass  # If reconfigure fails, continue anyway
     
     # Create test suite

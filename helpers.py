@@ -31,6 +31,7 @@ def validate_input(value: float, param_name: str) -> float:
             message=f"Значення {param_name} повинно бути в діапазоні [{MIN_VALUE}, {MAX_VALUE}]",
             recommendation=f"Будь ласка, введіть {param_name} в межах допустимого діапазону.",
         )
+    return value
 
 
 def safe_input_float(prompt: str, param_name: str) -> float:
